@@ -1,0 +1,17 @@
+{
+  "name": "com.hallo.android",
+  "version": "1.0.0",
+  "displayName": "HalloAndroid",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-dialogs": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~7.0.0",
+    "dialogs": "^1.1.20"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		function alertDismissed() {
+			alert('alert biasa');
+		}
+
+		function showAlert() {
+			navigator.notification.alert(
+				'Hai phonegap!',
+				alertDismissed,
+				'Selamat Datang',
+				'selesai'
+				);
+		}
+
+		function playBeep() {
+			navigator.notification.beep(3);
+		}
+
+		function vibrate() {
+			navigator.notification.vibrate(2000);
+		}
+	</script>
+</head>
+<body>
+	<h1>Plugin Dialog</h1>
+
+	<p><a href="#" onclick="showAlert(); return false;">Show Alert</a></p>
+	<p><a href="#" onclick="playBeep(); return false;">Play Beep</a></p>
+	<p><a href="#" onclick="vibrate(); return false;">Vibrate</a></p>
+
+</body>
+</html>
